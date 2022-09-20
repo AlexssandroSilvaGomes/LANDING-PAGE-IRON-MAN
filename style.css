@@ -1,0 +1,99 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: grid;
+    height: 100vh;
+    background-color: #F5F5F5;
+    grid-template-areas: 
+        "header"
+        "main";
+    grid-template-rows: 100px 1fr;
+}
+
+a {
+    text-decoration: none;
+    color: #000000;
+}
+
+ul, ol, li {
+    list-style: none;
+}
+
+header {
+    grid-area: header;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 31px 77px 0px 36px;
+}
+
+.logo {
+    height: 60px;
+}
+
+.navBar {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 35px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    font-size: 1.1rem;
+}
+
+.navBar li a {
+    position: relative;
+}
+
+.navBar li a::before {
+    content: "";
+    width: 0%;
+    height: 2px;
+    position: absolute;
+    background-color: #8A2D5E;
+    bottom: 0;
+    top: 20px;
+    transition: top .3s;
+}
+
+.navBar li a:hover::before {
+    width: 100%;
+    bottom: 0;
+    top: 25px;
+}
+
+.menu {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.75rem;
+    gap: 1rem;
+}
+
+main {
+    grid-area: main;
+    display: grid;
+    grid-template-areas: 
+        "social-media description hero";
+    grid-template-columns: 44px 441px 1fr;
+    background-color: aqua;
+}
+
+.social-media {
+    background-color: green;
+}
+
+.description {
+    background-color: purple;
+}
+
+.hero {
+    background-color: orchid;
+}
