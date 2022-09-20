@@ -83,17 +83,109 @@ main {
     grid-template-areas: 
         "social-media description hero";
     grid-template-columns: 44px 441px 1fr;
-    background-color: aqua;
+    padding-left: 45px;
+    padding-bottom: 28px;
+    position: relative;
+    /* background-color: aqua; */
 }
 
 .social-media {
-    background-color: green;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    /* background-color: green; */
+}
+
+.social-icon {
+    font-size: 2.75rem;
 }
 
 .description {
-    background-color: purple;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* background-color: purple; */
+}
+
+.title {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.title__description {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    font-size: 1rem;
+    color: #000000;
+}
+
+.title__title {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+    font-size: 5rem;
+    color: #8A2D5E;
+    align-self: center;
+}
+
+.subtitle {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding-top: 32px;
+    padding-bottom: 90px;
+}
+
+.subtitle__subtitle {
+    font-family: 'Nunito', sans-serif;
+    font-weight: 600;
+    color: #000000;
+    font-size: 1.2rem;
+}
+
+.subtitle__text {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    font-size: 1rem;
+    color: #000000;
+    opacity: 63%;
+    align-self: center;
+}
+
+.button {
+    display: grid;
+    place-items: center;
+    height: 57px;
+    width: 362px;
+    font-size: 1rem;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 300;
+    background-color:#383838;
+}
+
+.button a {
+    color: #FFFFFF;
 }
 
 .hero {
-    background-color: orchid;
+    display: flex;
+    flex-direction: column;
+    /* background-color: orchid; */
+}
+
+.hero__image--image {
+
+}
+
+.hero__name {
+    height: 400px;
+    width: 100px;
+}
+
+.next__page {
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
 }
